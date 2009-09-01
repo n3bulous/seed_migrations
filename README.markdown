@@ -17,16 +17,16 @@ The only vaguely cool feature is a migration-style record of applied seed data i
 
 - create _db/seeds/seed\_order.yaml_
 - enter a 1-D array of seed data files (sans the .rb extension) in the order they should be inserted.
-
-`- file_1`
-`- file_2`
-`- file_3`
-
+<pre>
+- file_1
+- file_2
+- file_3
+</pre>
 - Create the seed files in the same directory. (e.g. from Rails 3 seeds.rb)
-
-`cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-Mayor.create(:name => 'Daley', :city => cities.first)`
-
+<pre>
+cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
+Mayor.create(:name => 'Daley', :city => cities.first)
+</pre>
 - `rake db:seed42`
 
 The entries in _seed\_order.yaml_ are used as the key in the seedings table that keeps track of which ones have been inserted.
