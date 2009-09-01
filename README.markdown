@@ -1,6 +1,6 @@
 ### Why? ###
 
-A cursory glance at [db-populate](http://github.com/ffmike/db-populate/tree/master) and [seed-fu](http://github.com/mbleigh/seed-fu/tree/master).  Seed-fu didn't appear to support ordering the imports, which makes handling FK relations complicated (i.e. enabling and disabling all constraints.)
+[db-populate](http://github.com/ffmike/db-populate/tree/master) and [seed-fu](http://github.com/mbleigh/seed-fu/tree/master) seemed overkill (though create\_or\_update is neat).  Seed-fu didn't appear to support ordering the imports, which makes handling FK relations complicated (i.e. enabling and disabling all constraints.)
 
 While I was flip flopping like Al Gore, I found myself in a situation where the code could had to be custom.  I saw a post by Mike Gunderloy on [A Fresh Cup](http://afreshcup.com/2009/05/11/seed-data-in-rails-3/) referring to seed data support in Rails 3.  A quick look revealed it to not be much of a feature, but a simple rake task that loads Rails code which just  happens to be seed data related (or not.)
 
