@@ -27,8 +27,8 @@ The only vaguely cool feature is a migration-style record of applied seed data i
 - Create the seed files in the same directory. (e.g. from Rails 3 seeds.rb)
 
 <pre>
-cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-Mayor.create(:name => 'Daley', :city => cities.first)
+  cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
+  Mayor.create(:name => 'Daley', :city => cities.first)
 </pre>
 
 - `rake db:seed42`
