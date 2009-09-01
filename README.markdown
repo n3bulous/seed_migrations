@@ -6,12 +6,12 @@ While I was flip flopping like Al Gore, I found myself in a situation where the 
 
 ### Anything to see here? ###
 
-The only vaguely cool feature is a migration-style record of applied seed data imports.  This allows you to run the db:seed42 as many times as you like without repeating inserts.
+The only vaguely cool feature is a migration-style record of applied seed data imports.  This allows you to run the db:seed4r2 as many times as you like without repeating inserts.
 
 ### Installation ###
 
-- Copy _seeds42\_task.rb_ to your Rails' _lib/tasks_ directory.
-- Copy _seeds42.rb_ to your Rails' _db_ directory.
+- Copy _seed4r2\_task.rb_ to your Rails' _lib/tasks_ directory.
+- Copy _seed4r2.rb_ to your Rails' _db_ directory.
 
 ### Usage ###
 
@@ -31,13 +31,15 @@ The only vaguely cool feature is a migration-style record of applied seed data i
   Mayor.create(:name => 'Daley', :city => cities.first)
 </pre>
 
-- `rake db:seed42`
+- `rake db:seed4r2`
 
 The entries in _seed\_order.yaml_ are used as the key in the seedings table that keeps track of which ones have been inserted.
 
 ### Summary ###
 
-This is just a quick overview.  If you are interested in a more formal introduction and tests, let me know.
+This is just a quick overview.  It should work fine, though I've made a number of tweaks/improvements from the production (i.e. known working) version.
+
+If you are interested in a more formal introduction and tests, let me know.
 
 ### License ###
 

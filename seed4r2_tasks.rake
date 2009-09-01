@@ -3,8 +3,8 @@ namespace :db do
     Loads seed data from <RAILS_ROOT>/db/seeds2.rb.
   EOS
 
-  task :seed42 => :environment do
-    seed_file = File.join(RAILS_ROOT, "db", "seeds42.rb")
+  task :seed4r2 => :environment do
+    seed_file = File.join(RAILS_ROOT, "db", "seeds4r2.rb")
 
     load(seed_file) if File.exists?(seed_file)
   end
