@@ -1,6 +1,6 @@
 namespace :db do
   desc <<-EOS
-    Loads seed data from <RAILS_ROOT>/db/seeds2.rb.
+    Loads seed data from <RAILS_ROOT>/db/seeds4r2.rb.
   EOS
 
   task :seed4r2 => :environment do

@@ -33,5 +33,6 @@ def load_seed(seed_index)
   end
 end
 
-seeds = YAML::load(seed_index) if File.exists?(SEED_INDEX)
+CreateSeeding.up
+seeds = YAML::load_file(SEED_INDEX) if File.exists?(SEED_INDEX)
 seeds.each {|s| load_seed s}
