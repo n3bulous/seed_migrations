@@ -18,9 +18,9 @@ The only vaguely cool feature is a migration-style record of applied seed data i
 - create _db/seeds/seed\_order.yaml_
 - enter a 1-D array of seed data files (sans the .rb extension) in the order they should be inserted.
 
-`- file_1
-- file_2
-- file_3`
+`- file_1`
+`- file_2`
+`- file_3`
 
 - Create the seed files in the same directory. (e.g. from Rails 3 seeds.rb)
 
