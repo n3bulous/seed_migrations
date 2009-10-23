@@ -21,7 +21,6 @@ The only vaguely cool feature is a migration-style record of applied seed data i
 
 ### Installation ###
 
-- Copy _lib/generators/seed_ to your Rails' _lib/generators_ directory.
 - Copy _db/seeds.rb_ to your Rails' _db_ directory.
 - Copy _lib/tasks/seed\_tasks.rake_ to your Rails' _lib/tasks_ directory if you are pre-Rails 2.3.4.
 
