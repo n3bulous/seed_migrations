@@ -1,6 +1,4 @@
-# Use Ruby/Rails code to control your
-SEED_DIR = File.join(RAILS_ROOT, "db", "seeds")
-SEED_INDEX = File.join(SEED_DIR, 'seed_order.yaml')
+require 'seed_migrations'
 
 class CreateSeeding < ActiveRecord::Migration
   def self.up
