@@ -1,11 +1,16 @@
-namespace :db do
-  desc <<-EOS
-    Loads seed data from <RAILS_ROOT>/db/seeds4r2.rb.
-  EOS
+backport = Rails::VERSION::MAJOR <= 2 && Rails::VERSION::MINOR <= 3 && Rails::VERSION::TINY < 4
 
-  task :seed4r2 => :environment do
-    seed_file = File.join(RAILS_ROOT, "db", "seeds4r2.rb")
+if backport
+  namespace :db do
+    desc <<-EOS
+      Loads seed data from <RAILS_ROOT>/db/seeds.rb.
+    EOS
 
-    load(seed_file) if File.exists?(seed_file)
+    task :seed => :environment do
+      seed_file = File.join(RAILS_ROOT, "db", "seeds.rb")
+
+      load(seed_file) if File.exists?(seed_file)
+    end
   end
+
 end
