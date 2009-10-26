@@ -5,6 +5,8 @@ Seed Migrations allow you treat seed data like migration data:
 - each seed is imported only once
 - seeds are imported in a specific order
 
+A `rake db:seed` command is provided for pre-2.3.4 Rails users.
+
 ### Why? ###
 
 [db-populate](http://github.com/ffmike/db-populate/tree/master) and [seed-fu](http://github.com/mbleigh/seed-fu/tree/master) seemed overkill (though create\_or\_update is neat).  Seed-fu didn't appear to support ordering the imports, which makes handling FK relations complicated (i.e. enabling and disabling all constraints.)
@@ -26,8 +28,6 @@ Obviously, if you already have a _db/seeds.rb_ you'll have to migrate.  The most
 - copy the current seeds.rb file into it
 - prepend the seed file name (sans the .rb extension) to db/seeds/seed\_order.yaml
 - if the existing seeds can't be re-run, insert the seed filename into the seedings table before running `rake db:seed` for the first time.
-
-If you are running a version of Rails before 2.3.4, the `rake db:seed` task is provided for you.
 
 ### Usage ###
 
