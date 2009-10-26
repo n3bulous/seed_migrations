@@ -27,6 +27,8 @@ Obviously, if you already have a _db/seeds.rb_ you'll have to migrate.  The most
 - prepend the seed file name (sans the .rb extension) to db/seeds/seed\_order.yaml
 - if the existing seeds can't be re-run, insert the seed filename into the seedings table before running `rake db:seed` for the first time.
 
+If you are running a version of Rails before 2.3.4, the `rake db:seed` task is provided for you.
+
 ### Usage ###
 
 - `./script/generate seed <a-descriptive-name>`
