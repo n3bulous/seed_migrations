@@ -1,16 +1,13 @@
 Description:
-    Creates a new seed data file and optional configuration file for
-    ordering. Pass a name for the seed data file, either CamelCased or
-    under_scored, as an argument.
+    Creates a new seed data file. Pass a name for the seed data file, 
+    either CamelCased or under_scored, as an argument.
 
-    This creates a seed data file in db/seeds and will add an entry to 
-    the db/seeds/seed_order.yaml file (and create it if necessary).
+    This creates a seed data file in db/seeds.
 
 Example:
     `./script/generate seed administrator_and_countries`
 
-    creates the seed file and ordering:
+    creates the seed file and directory:
         db/seeds
-        db/seeds/seed_order.yaml
         db/seeds/20091209014329_administrator_and_countries.rb
 
