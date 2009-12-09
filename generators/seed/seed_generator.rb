@@ -1,13 +1,11 @@
-class SeedGenerator < Rails::Generator::Base
+class SeedGenerator < Rails::Generator::NamedBase
   def manifest
     record do |m|
-      description = ARGV[-1]
-
       m.directory 'db/seeds'
       m.file 'seed_order.yaml.example', "db/seeds/seed_order.yaml", :collision => :skip
 
       timestamp = Time.now.utc.strftime("%Y%m%d%H%M%S")
-      base_name = "#{timestamp}_#{description}"
+      base_name = "#{timestamp}_#{name.underscore}"
       
       m.file 'seed_data.rb.example', "db/seeds/#{base_name}.rb"
 
