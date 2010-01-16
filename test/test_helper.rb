@@ -5,7 +5,7 @@ require 'shoulda'
 require 'matchy'
 require 'mocha'
 
-require 'activerecord'
+require 'active_record'
 require 'pathname'
 require 'test_fs'
 
